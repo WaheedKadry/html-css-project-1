@@ -1,0 +1,40 @@
+/*3.4 offer Section*/
+.offer{
+
+}
+.offer-content{
+    overflow: hidden;
+}
+.offer-item{
+    width: 27%;
+    float: left;
+    margin-bottom: 15px;
+border: 1px solid #e8e8e8;
+padding: 15px 10px 20px 30px;
+position: relative;
+
+}
+.offer-item.mg{
+margin: 0 2%;
+
+}
+.offer-item .icon{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    color: var(--maincolor);
+}
+.offer-item-title{
+    text-transform: capitalize;
+    margin-bottom: 0px;
+   transition: color .9s;
+    
+}
+.offer-item-desc{
+    color: var(--graycolor); 
+    margin-bottom: ;
+    line-height: 1.5;
+}
+.offer-item:hover .offer-item-title{
+   color: var(--whitecolor);
+}

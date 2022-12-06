@@ -1,0 +1,44 @@
+/*3.2 ABOUT Section*/
+.about{
+
+}
+.about-content{
+    overflow: hidden;
+}
+.about-item{
+    width: 29%;
+    float: left;
+    text-align: center;
+border: 1px #a8a8a8 solid;
+padding: 40px 2.9px;
+}
+/*.about-item:hover{
+    background: rgb(27, 27, 27);
+    transition: .9s;
+    color: var(--whitecolor);*//*من اختراعي}*/
+
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item .icon{
+    color: var(--maincolor);
+margin-bottom: 10px;
+
+}
+.about-item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+transition: color .5s;
+}
+.about-item-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: var(--graycolor);
+}
+.about-item-link{
+    color:var(--maincolor) ;
+    text-transform: capitalize;
+}
+.about-item:hover .about-item-title{
+    color: var(--whitecolor);
+}

@@ -1,0 +1,136 @@
+/* 3-sections styles */
+/* 3.0 header*/
+.header{
+    
+    width: 100%;
+position: fixed;
+z-index: 1;
+background: rgba(0,0,0,.5);
+}
+.header-content{
+   /* overflow: hidden;/*دا حل الثاني للفلوت*/
+}
+.header .logo{
+    width: 40%;
+    float: left;/* .clear{clear: both;}حل المشكله
+عشان العناصر تيجي جنب بعض_مشكله الفلوت هي بتخلي الاب مش حاسس بالابناء +العناصر الي بعد الفلوت بتتاثر بالفلوت*/
+}
+.header .logo img {
+    width: 20%;
+    margin-top: 8px;
+}
+.header .nav{width: 60%;
+    float: left;
+list-style:none;/*بتشيل الترقيم بتاع القايمه*/
+}
+.clear{
+    clear: both;
+}
+
+.header .nav > li{
+    display: inline-block;
+text-align: right;
+}
+.header .nav > li > a{
+    color: var(--whitecolor);
+    text-decoration: none;/*عشان تشيل الخط الي تحت اللينك*/
+display: block;
+font-size: 14px;
+padding: 18px 5px;
+}
+.blog-1{
+    text-decoration: none;
+    color: #fff;
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:after{
+    content:"";
+    display: block;/*عشان العنصر (a) in line*/
+    height: 3px;
+    background: royalblue;
+    transition: width .5s;
+    margin-top: 2px;/*عشان العناصر تطلع فوق الهوم سنه صغيره*/
+}
+
+.header .nav > li > a.active:after{/*الخط الي تحت home*/
+    width: 100%;  
+}
+.header .nav > li > a:after{/*الخط الي تحت home*/  
+    width: 0; 
+}
+.header .nav > li > a:hover{
+    letter-spacing: 1px;
+}
+.header .nav > li > a:hover:after{
+    width: 100%;
+}
+.dropdawn{/*الاب*/
+    position: relative;
+    
+}
+
+.dropdawn-menu{/*الابن*/
+    position: absolute;
+    z-index: 1;
+    color: white;
+    list-style:none;
+    background: royalblue;
+    width: 130px;
+    height: 28px;
+    left: -60%;
+    top: 90%;
+    text-align: center;
+    padding-top: 4px;
+    opacity: 0;/*عشان لblog post*/
+    visibility: hidden;
+    transition:visibility .5s ,opacity .5s ;
+}
+.dropdawn:hover .dropdawn-menu{
+    opacity: 1;
+    visibility:visible;/*عشان لblog post*/
+}
+.home{
+height: 100vh;
+background-image: url(background1.webp);
+background-size: cover;/*css3*/
+position: relative;
+}
+
+
+.home-content{
+ 
+position: absolute;
+width: 65%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);/*hero image توسطن*//*حركه نصه للشمال ونصه لفوق*/
+text-align: center;
+}
+.home .title{color: red;
+color: var(--whitecolor);
+font-size: 2.5rem;/*rem دي root elment  معناها الحجم بتاعه 16 في2ء16=32*/
+text-transform: uppercase;/*عشان تخلي الحروف كابتل*/
+}
+.home .home-desc{
+    margin: 15px 0;
+    color: var(--whitecolor);
+    letter-spacing: 2px;
+    line-height: 1.5;/*تبعد الكلام*/
+}
+.home .btn{
+    min-width: 160px;
+    height: 45px;
+padding: 15px 0;
+border-radius: 5px;
+border: 0;
+cursor: pointer;
+font-size: 15px;
+}
+.home .btn-start{
+margin-right:10px ;
+background: var(--whitecolor);
+}
+.home .btn-learn{
+background: #4e86f8;
+color: var(--whitecolor);
+}

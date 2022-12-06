@@ -1,0 +1,58 @@
+/*services section*/
+.service{
+    background: var(--bg-gray);
+    }
+    .service-item{
+        width: 50%;
+        float: left;
+    }
+    .service-item .section-header{
+    text-align: left;
+    }
+    .service-item .section-header .line{
+        margin: 0 0 50px 0;
+    }
+    .service-item-desc{
+        padding-right:20px ;
+        color: var(--graycolor);
+        line-height: 1.4;
+        font-size: 17px;
+        margin-bottom: 20px;
+    
+    }
+    .service-list{
+       
+    
+    }
+    .service-list li{
+        margin-bottom: 10px;
+        color: var(--graycolor);
+    }
+    .service-list li i{
+        border: 1px solid var(--maincolor) ;
+        color: var(--maincolor) ;
+        width: 20px;
+        height: 20px;
+        padding: 7px ;
+        border-radius: 50%;
+    }
+    .service-item-img img{
+        width: 100%;
+    }
+    .service-boilets{
+         text-align: center;
+         }
+    .service-boilets li{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background: #e8e8e8;
+       margin: 10px 5px;
+       border-radius: 50%;
+    }
+    .service-boilets li.active{
+        background: var(--maincolor);
+    }
+    .service-boilets li:hover{
+        background: var(--maincolor);
+    }
